@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: hostvars[inventory_hostname].foreman_ip
+  hosts: 10.1.66.181
   tasks:
   - name: Install apache packages 
     yum:
