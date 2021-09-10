@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: "{{ hostvars.test-vm01.foreman_ip }}"
+  hosts: {{ hostvars['test-vm01'].foreman_ip }}
   tasks:
   - name: Install apache packages 
     yum:
