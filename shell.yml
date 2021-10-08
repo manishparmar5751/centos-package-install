@@ -1,6 +1,6 @@
 ---
-- name: This sets up an httpd webserver
+- name: Run Shell Commands
   hosts: all
   tasks:
-  - name: Install apache packages 
+  - name: Find linux version 
     shell: uname -a
